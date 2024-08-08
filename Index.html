@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Recipe</title>
+        <style>
+            .slider .indicators .indicator-item.active {
+                background-color: #e65100;
+            }
+        </style>
+    </head>
+    <body> 
+         <header>
+             <div class="navbar-fixed">
+                <nav class="white">
+                    <div class="container">
+                        <a href="" class="brand-logo"><img src="img/logo.png" alt="" style="max-width: 150px;"></a>
+                        <a href="#sidenav" class="sidenav-trigger right">
+                        <i class="material-icons orange-text text-darken-4">menu</i>
+                        </a>
+                     <ul class="right hide-on-med-and-down">
+                        <li><a href="" class="orange-text text-darken-4">Home</a></li>
+                        <li><a href="" class="orange-text text-darken-4">Cakes</a></li>
+                        <li><a href="" class="orange-text text-darken-4">Soups</a></li>
+                        <li><a href="" class="orange-text text-darken-4">Chicken</a></li>
+                        <li><a href="" class="orange-text text-darken-4">Customer</a></li>
+                     </ul>
+                    </div>
+                </nav>
+             </div>
+
+            <ul class="sidenav" id="sidenav">
+             <li><a href="" class="orange-text text-darken-4">Home</a></li>
+             <li><a href="" class="orange-text text-darken-4">Cake</a></li>
+             <li><a href="" class="orange-text text-darken-4">Soup</a></li>
+             <li><a href="" class="orange-text text-darken-4">Chicken</a></li>
+             <li><a href="" class="orange-text text-darken-4">Customer</a></li>
+            </ul>
+
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/cake_fruit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/shrimp_soup.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/chicken_3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/dessert_chocolate.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/ginger_cake.webp" alt="">
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+     <main>
+
+     </main>
+     <footer>
+
+     </footer>
+     <script src="js/jqueryv3.4.1.js"></script>
+     <script src="js/materialize.js"></script>
+     <script>
+          $(document).ready(function(){
+                $('.slider').slider();
+                $('.sidenav').sidenav();
+                $('.tooltipped').tooltip();
+})
+     </script>
+    </body>
+</html>
