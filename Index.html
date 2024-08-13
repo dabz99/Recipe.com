@@ -28,10 +28,10 @@
                         </a>
                      <ul class="right hide-on-med-and-down">
                         <li><a href="" class="orange-text text-darken-4">Home</a></li>
-                        <li><a href="" class="orange-text text-darken-4">Cakes</a></li>
-                        <li><a href="" class="orange-text text-darken-4">Soups</a></li>
-                        <li><a href="" class="orange-text text-darken-4">Chicken</a></li>
-                        <li><a href="" class="orange-text text-darken-4">Customer</a></li>
+                        <li><a href="#Cakes" class="orange-text text-darken-4">Cakes</a></li>
+                        <li><a href="#Soups" class="orange-text text-darken-4">Soups</a></li>
+                        <li><a href="#Chickens" class="orange-text text-darken-4">Chicken</a></li>
+                        <li><a href="#customers" class="orange-text text-darken-4">Customer</a></li>
                      </ul>
                     </div>
                 </nav>
@@ -39,10 +39,10 @@
 
             <ul class="sidenav" id="sidenav">
              <li><a href="" class="orange-text text-darken-4">Home</a></li>
-             <li><a href="" class="orange-text text-darken-4">Cake</a></li>
-             <li><a href="" class="orange-text text-darken-4">Soup</a></li>
-             <li><a href="" class="orange-text text-darken-4">Chicken</a></li>
-             <li><a href="" class="orange-text text-darken-4">Customer</a></li>
+             <li><a href="#Cakes" class="orange-text text-darken-4">Cake</a></li>
+             <li><a href="#Soups" class="orange-text text-darken-4">Soup</a></li>
+             <li><a href="Chickens" class="orange-text text-darken-4">Chicken</a></li>
+             <li><a href="#customers" class="orange-text text-darken-4">Customer</a></li>
             </ul>
 
             <div class="slider">
@@ -103,7 +103,7 @@
                       </li>   
                     </ul>
                 </div>
-                <div class="col s12 l4">
+                <div class="col s12 l4" id="customers">
                     <ul class="collapsible">
                       <li>  
                             <div class="collapsible-header orange darken-4">
@@ -166,7 +166,7 @@
             </div>
         </div>
         <!-- parallax-1 -->
-        <div class="parallax-container">
+        <div class="parallax-container" id="Cakes">
             <div class="parallax">
                 <img src="img/cake.jpg" alt="cake" class="responsive-img" id="cakes">
             </div>
@@ -316,7 +316,7 @@
             </div>
         </div>
         <!-- parallax-2 -->
-        <div class="parallax-container">
+        <div class="parallax-container" id="Soups">
             <div class="parallax">
                 <img src="img/soup.jpg" alt="soup-img" class="responsive-img" id="soups">
             </div>
@@ -466,7 +466,8 @@
             </div>
         </div>
         <!-- parallax-3 -->
-        <div class="parallax-container">
+         <div class="scrollspy"></div>
+        <div class="parallax-container" id="Chickens">
             <div class="parallax">
                 <img src="img/chicken.jpg" alt="cake" class="responsive-img" id="chic">
             </div>
@@ -625,7 +626,7 @@
             </div>
             <div class="col s6">
                 <h3 class="orange-text text-darken-4">Quick Links</h3>
-                <ul class="flow-text white-text">
+                <ul class="justify-text white-text">
                     <li><a href="#" class="white-text darken-4">Back to top</a></li>
                     <li><a href="#cus" class="white-text darken-4">Customers</a></li>
                     <li><a href="#cakes" class="white-text darken-4">Cakes</a></li>
@@ -645,6 +646,7 @@
                 $('.slider').slider();
                 $('.sidenav').sidenav();
                 $('.collapsible').collapsible();
+                $('.scrollspy').scrollSpy();
 })
      </script>
     </body>
